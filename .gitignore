@@ -1,2 +1,7 @@
 # Project exclude paths
 /out/
+*.icloud
+*.list
+*.ser
+*.log
+/output
