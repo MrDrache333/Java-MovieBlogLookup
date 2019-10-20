@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1480.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFX.MainWindow_Controller">
+   <children>
+      <SplitPane fx:id="splitpane" dividerPositions="0.7213225371120108" layoutX="314.0" layoutY="61.0" prefHeight="701.0" prefWidth="1209.0" stylesheets="@styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane fx:id="ap_table" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #262626;" stylesheets="@styles.css">
+               <children>
+                  <TableView fx:id="maintable" layoutY="52.0" prefHeight="646.0" prefWidth="1088.0" style="-fx-background-color: #262626;" stylesheets="@styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="52.0" />
+                  <Button fx:id="btn_cat3" layoutX="486.0" layoutY="9.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="115.0" text="HD-Filme" />
+                  <Label alignment="CENTER" layoutY="-6.0" prefHeight="48.0" prefWidth="208.0" text="EasyMovieLookup" textFill="WHITE">
+                     <font>
+                        <Font name="DIN Condensed Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btn_cat4" layoutX="608.0" layoutY="9.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="115.0" text="HD-Serien" />
+                  <Button fx:id="btn_cat2" layoutX="363.0" layoutY="9.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="115.0" text="TOP-Releases" />
+                  <Button fx:id="btn_cat1" layoutX="215.0" layoutY="9.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="140.0" text="Neuerscheinungen" />
+                  <Button fx:id="btn_cat5" layoutX="731.0" layoutY="9.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="115.0" text="4K-Filme" />
+                  <Label alignment="CENTER" layoutX="11.0" layoutY="31.0" prefHeight="17.0" prefWidth="185.0" text="by     Keno Oelrichs García" textFill="#6f6f6f" />
+                  <TextField fx:id="tf_searchbar" layoutX="855.0" layoutY="9.0" prefHeight="33.0" prefWidth="200.0" promptText="Nach Filmen suchen" style="-fx-border-color: WHITE; -fx-border-width: 2; -fx-font-size: 13;">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="ap_details" minHeight="0.0" minWidth="0.0" prefHeight="698.0" prefWidth="448.0" style="-fx-background-color: #262626;" stylesheets="@styles.css">
+               <children>
+                  <ImageView fx:id="image_artwork" fitHeight="450.0" fitWidth="320.0" layoutX="45.0" layoutY="14.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="14.0">
+                     <image>
+                        <Image url="@../../Resources/images/nocover.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink fx:id="hl_op" alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="464.0" prefHeight="25.0" prefWidth="320.0" text="ORIGINAL POST (Klick mich)" textAlignment="CENTER" textFill="#00a6ff" />
+                  <Label layoutX="33.0" layoutY="499.0" text="Downloadlink (Copy&amp;Paste)" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="ta_downlink" editable="false" layoutX="33.0" layoutY="518.0" prefHeight="171.0" prefWidth="344.0" stylesheets="@styles.css" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
