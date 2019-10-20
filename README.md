@@ -1,6 +1,6 @@
 # Java-MovieBlogLookup
 
 Screenshot:
-![MacOS](Screenshots/Screenshot_Telegram_01.jpeg)
+![MacOS](Screenshots/Bildschirmfoto 2019-10-20 um 14.41.57.png)
 
 README WILL FOLLOW
